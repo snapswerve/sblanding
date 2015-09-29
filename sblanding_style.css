@@ -1009,6 +1009,14 @@ section header h1 {
   margin-top: 30px
 }
 
+@media (max-width: 1024px) {
+    section header h1 {
+    margin-bottom: 0px;
+    margin-top: 30px;
+    font-size: 7em;
+  }
+}
+
 section header h4 {
   margin-top: 20px;
   margin-bottom: 30px;
@@ -1016,6 +1024,17 @@ section header h4 {
   font-family: "FaktPro-Normal", Helvetica, sans-serif;
   font-size: 1.2em;
   letter-spacing: 0.01em
+}
+
+@media (max-width: 1024px) {
+    section header h4 {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      font-family: "FaktPro-Normal", Helvetica, sans-serif;
+      font-size: 3em;
+      letter-spacing: 0.01em
+  }
 }
 
 section#app,
@@ -1040,15 +1059,15 @@ section#app-sm {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   section#app, section#app-sm {
-    height: 200px;
+    height: 400px;
     background-size: 100%;
     background-position: 50%
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   section#app .content .intro, section#app-sm .content .intro {
     display: none
   }
@@ -1107,13 +1126,13 @@ section#app-sm .intro img {
   margin-top: 0px
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   section#app-sm {
     display: none
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   section#app-sm {
     display: show;
     height: auto;
@@ -1131,23 +1150,23 @@ section#app-sm .intro img {
   }
 }
 
-@media (max-width: 768px) and (max-width: 768px) {
+@media (max-width: 1024px) and (max-width: 1024px) {
   section#app-sm .intro {
     display: show
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   section#app-sm .intro h1 {
     margin-top: 10px;
     padding: 0px 20px;
-    font-size: 2.13em;
+    font-size: 5em;
     margin-bottom: 10px
   }
   section#app-sm .intro h2 {
     margin-top: 0px;
     padding: 0px 20px;
-    font-size: 1.2em
+    font-size: 2.7em
   }
   section#app-sm .intro form {
     width: 100%;
@@ -1169,10 +1188,13 @@ section#app-sm .intro img {
   section#app-sm .intro p {
     float: left;
     margin-left: 20px;
-    font-size: 1em;
+    font-size: 2em;
     width: 100%
   }
 }
+
+/* Did not update this part to be mobile, because it looks like there's no data
+on the page. */
 
 section#events {
   background: url(https://ddorzr2nptqu6.cloudfront.net/assets/new/client/backgrounds/bg-section-events-44e39c15bf9899e84f5bae1c79dc619c.png) top left repeat;
@@ -1196,7 +1218,7 @@ section#events header h1 {
 
 @media (max-width: 768px) {
   section#events header h1 {
-    font-size: 2.13em;
+    font-size: 22.13em;
     padding-left: 20px
   }
 }
@@ -1444,7 +1466,7 @@ section#how-it-works ul li:hover>div[class*='step5'] {
 .step5-thumb.step-active a {
   color: #000
 }
-
+/* Same with this. No mobile adjustments */
 @media (max-width: 480px) {
   .step5-thumb:hover, .step5-thumb.step-active {
     background-position: -40px -160px
@@ -2290,7 +2312,7 @@ section#how-it-works ul li:hover>div[class*='step5'] a {
   clear: both
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .content-inner {
     display: none
   }
@@ -2852,16 +2874,16 @@ section#testimonials {
   background: url(https://ddorzr2nptqu6.cloudfront.net/assets/new/client/backgrounds/bg-section-testimonials-fba6a48045bc52edafeb9928f4af747e.png) repeat top left
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   section#testimonials header h1 {
-    font-size: 2.13em;
+    font-size: 6em;
     padding-left: 20px
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   section#testimonials header h4 {
-    font-size: 1.2em;
+    font-size: 3em;
     padding-left: 20px;
     padding-right: 20px
   }
@@ -2876,7 +2898,7 @@ section#testimonials blockquote {
   height: 200px
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   section#testimonials blockquote {
     width: 98.73418%;
     float: left;
@@ -2891,7 +2913,7 @@ section#testimonials blockquote {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   section#testimonials blockquote {
     height: auto
   }
@@ -2905,9 +2927,10 @@ section#testimonials blockquote img {
   width: auto
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
   section#testimonials blockquote img {
-    margin-left: 20px
+    margin-left: 20px;
+    height: 15%;
   }
 }
 
@@ -2921,6 +2944,15 @@ section#testimonials blockquote div {
 @media (min-width: 480px) and (max-width: 768px) {
   section#testimonials blockquote div {
     width: 82.06751%;
+    float: left;
+    margin-left: 0.63291%;
+    margin-right: 0.63291%
+  }
+}
+
+@media (max-width: 1024px) {
+  section#testimonials blockquote div {
+    width: 65%;
     float: left;
     margin-left: 0.63291%;
     margin-right: 0.63291%
@@ -2941,9 +2973,9 @@ section#testimonials blockquote div h3 {
   margin: 0px 0px 7px
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
   section#testimonials blockquote div h3 {
-    font-size: 1.53em
+    font-size: 4em
   }
 }
 
@@ -2958,6 +2990,12 @@ section#testimonials blockquote div cite {
   font-style: normal
 }
 
+@media (max-width: 1024px) {
+  section#testimonials blockquote div cite {
+    font-size 1.5em;
+  }
+}
+
 section#testimonials blockquote div p {
   margin: 0px 0px 3px
 }
@@ -2969,9 +3007,9 @@ section#testimonials blockquote div footer {
   background: none
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
   section#testimonials blockquote div p, section#testimonials blockquote div footer {
-    font-size: 1em
+    font-size: 2em
   }
 }
 
@@ -3174,9 +3212,9 @@ section#professionals ul li {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
   section#professionals ul li {
-    width: 98.73418%;
+    width: 45%;
     float: left;
     margin-left: 0.63291%;
     margin-right: 0.63291%;
@@ -3199,6 +3237,17 @@ section#professionals ul li .professional-thumb a {
   padding: 0px;
   margin: 0px 0px 2px 0px;
   font-size: 1em
+}
+
+@media (max-width:1024px) {
+  section#professionals ul li .professional-thumb h5,
+  section#professionals ul li .professional-thumb p,
+  section#professionals ul li .professional-thumb a {
+    padding: 5px;
+    margin: 0px 0px 2px 0px;
+    font-size: 1.5em;
+    line-height: auto;
+  }
 }
 
 section#professionals ul li .professional-thumb p {
@@ -3249,12 +3298,13 @@ section#professionals aside {
   z-index: 100
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   section#professionals aside {
     height: auto;
     top: 0px;
     bottom: 0;
-    position: absolute
+    position: absolute;
+    overflow: scroll;
   }
 }
 
@@ -3270,7 +3320,7 @@ section#professionals aside header {
   margin-top: 0px
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
   section#professionals aside header {
     width: 98.73418%;
     float: left;
@@ -3281,7 +3331,7 @@ section#professionals aside header {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   section#professionals aside header {
     display: none
   }
@@ -3292,7 +3342,7 @@ section#professionals aside header img {
   width: 100%
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   section#professionals aside header img {
     display: none
   }
@@ -3305,7 +3355,7 @@ section#professionals aside article {
   margin-right: 0.63291%
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   section#professionals aside article {
     width: 98.73418%;
     float: left;
@@ -3337,9 +3387,9 @@ section#professionals aside article div h2 {
   font-size: 2.13em
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   section#professionals aside article div h2 {
-    font-size: 1.53em
+    font-size: 2.4em
   }
 }
 
@@ -3351,9 +3401,9 @@ section#professionals aside article div h3 {
   font-size: 2.13em
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   section#professionals aside article div h3 {
-    font-size: 1.53em
+    font-size: 2.4em
   }
 }
 
@@ -3375,10 +3425,10 @@ section#professionals aside article p {
   color: #241f21
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   section#professionals aside article p {
     padding: 20px;
-    font-size: 1em;
+    font-size: 2em;
     margin-top: 0px
   }
 }
