@@ -6,6 +6,12 @@ ol {
   padding: 0
 }
 
+@media (max-width: 1024px){
+  body {
+    overflow-x: hidden;
+  }
+}
+
 @font-face {
   font-family: 'FaktPro-Blond';
   src: url(https://ddorzr2nptqu6.cloudfront.net/assets/FaktPro-Blond-777815b57b4331c16d0be826fd19d4c8.eot);
